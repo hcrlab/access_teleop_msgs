@@ -7,7 +7,7 @@ project(access_teleop_msgs)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED
+find_package(catkin REQUIRED COMPONENTS
 	message_generation
 	)
 
@@ -47,8 +47,7 @@ find_package(catkin REQUIRED
 ## Generate messages in the 'msg' folder
  add_message_files(
    FILES
-   delta_px.msg
-   px.msg
+   DeltaPX.msg
  )
 
 ## Generate services in the 'srv' folder
@@ -66,10 +65,9 @@ find_package(catkin REQUIRED
 # )
 
 ## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+ generate_messages(
+	 DEPENDENCIES
+ )
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
