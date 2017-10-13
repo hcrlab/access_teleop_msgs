@@ -49,6 +49,8 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    DeltaPX.msg
    PX.msg
+   PXAndTheta.msg
+   Theta.msg
  )
 
 ## Generate services in the 'srv' folder
